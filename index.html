@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Table</title>
+    <style>
+        /* Set the padding variable here */
+        :root {
+            --table-padding: 100px;
+        }
+
+
+        /* Styles for the table and its cells */
+        table {
+            border-collapse: separate;  /* This is necessary to ensure each border has its own color */
+            width: 100%;
+            border: 2px solid black;
+            background-color: white;
+max-width: 500px;
+        }
+
+        th, td {
+            padding: var(--table-padding);
+            text-align: left;
+        }
+
+        th {
+            border: 1px solid blue;
+        }
+
+        td {
+            border: 1px solid red;
+            background: radial-gradient(circle at center,
+                #f7f7f7 0%, 
+                #f7f7f7 10%, 
+                #dedede 10%, 
+                #dedede 20%, 
+                #c4c4c4 20%, 
+                #c4c4c4 30%, 
+                #aaaaaa 30%, 
+                #aaaaaa 40%, 
+                #909090 40%, 
+                #909090 50%, 
+                #909090 50%, 
+                #909090 60%, 
+                #aaaaaa 60%, 
+                #aaaaaa 70%, 
+                #c4c4c4 70%, 
+                #c4c4c4 80%, 
+                #dedede 80%, 
+                #dedede 90%, 
+                #f7f7f7 90%, 
+                #f7f7f7 100%); 
+        }
+
+        tr {
+            border: 1px solid green;
+        }
+
+        /* This style will apply the border between rows */
+        tr + tr td {
+            border-top: 1px solid purple;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Income</th>
+                <th>Increase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Company A</td>
+                <td>$100,000</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <td>Company B</td>
+                <td>$120,000</td>
+                <td>7%</td>
+            </tr>
+            <tr>
+                <td>Company C</td>
+                <td>$90,000</td>
+                <td>3%</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
